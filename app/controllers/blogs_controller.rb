@@ -38,7 +38,7 @@ class BlogsController < ApplicationController
   private
 
   def blog_params
-    params.require(:blog).permit(:title, :categori, :body)
+    params.require(:blog).permit(:title, :category, :body)
     #フォームからのデータを受け取れるようになる
   end
 end
