@@ -60,9 +60,8 @@
         <!-- body部分 ここまで -->
       </p>
       <%= link_to "編集", edit_blog_path(@blog) %>
-      <a href="#">削除</a>
+      <%= link_to "削除", blog_path(@blog), method: :delete %>
       <div class="author-case">
-        <div class="author-image"></div>
         <div class="author-box">
           <p class="author-name">By JOHN SMITH / Photographer</p>
           <p class="author-text">
