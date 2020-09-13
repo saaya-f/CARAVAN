@@ -17,7 +17,7 @@ class BlogsController < ApplicationController
     blog = Blog.new(blog_params)
     #k今回のモデル名はblogのため、アクション名はblog_params
     blog.save
-    redirect_to blogs_path(blog.id)
+    redirect_to blog_path(blog.id)
   end
 
   def edit
