@@ -10,7 +10,7 @@ class BlogsController < ApplicationController
   def new
     @blog = Blog.new
     #form_withを使うにはインスタンス変数が必要
-    #Blog.newでからのモデル作成→フォームとBlogモデルが関連付けられる
+    #Blog.newからのモデル作成→フォームとBlogモデルが関連付けられる
   end
 
   def create
@@ -21,6 +21,7 @@ class BlogsController < ApplicationController
   end
 
   def edit
+    @blog = Blog.find(params[:id])
   end
 
   private
